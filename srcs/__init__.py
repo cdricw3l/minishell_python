@@ -2,6 +2,7 @@
 from utils import *
 from tree import *
 from builtin.env import *
+from builtin.echo import *
 from interface import *
 
 
@@ -24,8 +25,8 @@ def pynishell():
 
 
 def __main__():
-        token = Token("env",["Z=", "$PAT"])
-        ft_env(token)
+        token = Token("echo",["hello world", "$PATH"])
+        ft_echo(token)
         
 
 __main__()

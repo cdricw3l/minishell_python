@@ -1,7 +1,7 @@
 
 from utils import *
 from tree import *
-
+from builtin.env import *
 
 def pynishell():
     while(1):
@@ -21,7 +21,6 @@ def pynishell():
 
 
 def __main__():
-    print("hello_world")
-    #test()
+        ft_env()
 
 __main__()

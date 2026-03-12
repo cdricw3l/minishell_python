@@ -4,7 +4,7 @@ COM=pynishell
 ARG=
 
 test:
-	pytest assertions/assertion.py
+	python3 assertions/__init__.py
 env:
 	python3 -m venv ${VENV_NAME}
 

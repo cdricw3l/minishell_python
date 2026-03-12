@@ -6,7 +6,7 @@
 #    By: cdric.b <cdric.b@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/12 06:12:16 by cdric.b           #+#    #+#              #
-#    Updated: 2026/03/12 21:01:47 by cdric.b          ###   ########.fr        #
+#    Updated: 2026/03/12 22:44:05 by cdric.b          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,5 +34,3 @@ def ft_strncmp(s1: str, s2: str, size) :
             return (ord(s1[i]) - ord(s2[i]))
         i += 1
     return (0)
-
-#def ft_strlen(s1: str) -> int:

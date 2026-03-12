@@ -1,3 +1,5 @@
+![alt text](image.png)
+
 # Minishell en python
 
 Il semblerait que le cursus de 42 soit en pleine mutation et que certains projets en C soient sur le point d’être remplacés par de nouveaux projets en Python.

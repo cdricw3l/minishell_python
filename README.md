@@ -1,4 +1,5 @@
 ![alt text](image.png)
+*j'ai adopter un dragon pour m'accompagner*
 
 # Minishell en python
 

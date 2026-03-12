@@ -1,4 +1,4 @@
-from interface import *
+from interfaces.interface import *
 
 def ft_echo(token:Token):
     i = 0

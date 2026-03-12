@@ -1,20 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    assertion.py                                       :+:      :+:    :+:    #
+#    tokenizer.py                                       :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: cdric.b <cdric.b@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/03/12 06:15:48 by cdric.b           #+#    #+#              #
-#    Updated: 2026/03/12 22:27:35 by cdric.b          ###   ########.fr        #
+#    Created: 2026/03/12 16:07:48 by cdric.b           #+#    #+#              #
+#    Updated: 2026/03/12 21:00:15 by cdric.b          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-from srcs.tree import *
-from srcs.utils.utils import *
+from interfaces.interface import *
+from utils.utils import *
 
-def assertion_test():
-    assert is_commande("ls")
-    assert is_commande("lss") == False
-    assert is_buildin("pwd")
-    assert is_buildin("ls") == False
+def get_token(str: str) -> int :
+    if (is_builtin(str)):
+        return TokenType(1)

@@ -12,7 +12,7 @@ Je vais essayer de me rapprocher au maximum des contraintes de la Norminette.
 • Your project must be written in Python 3.11 or later.\
 • Your project must adhere to the flake8 coding standard. Bonus files are also subject to
 this standard.\
-• Your functions should handle exceptions gracefully to avoid crashes.\ 
+• Your functions should handle exceptions gracefully to avoid crashes. 
 Use try-except blocks to manage potential errors. If your program crashes due to unhandled exceptions during the review, it will be considered non-functional.\
 • All resources(e.g.,filehandles,networkconnections) must be properly managed to prevent leaks.
 

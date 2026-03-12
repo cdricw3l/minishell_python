@@ -1,12 +1,20 @@
 VENV_NAME=venv
+SRCS= srcs/__init__.py
 COM=pynishell
+ARG=
 
+test:
+	pytest assertions/assertion.py
 env:
 	python3 -m venv ${VENV_NAME}
-	source ${VENV_NAME}/bin/activate
+
+run:
+	venv/bin/python3 ${SRCS}
 
 clean:
 	rm -rf ${VENV_NAME}
+
+re: clean env run
 
 git: clean
 	git add .

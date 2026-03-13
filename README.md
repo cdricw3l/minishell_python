@@ -1,4 +1,4 @@
-![alt text](image.png)\
+![alt text](_doc/image.png)\
 *j'ai adopté un dragon pour m'accompagner*
 
 # Minishell en python

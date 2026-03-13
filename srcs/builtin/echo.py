@@ -1,4 +1,4 @@
-from interfaces.interface import *
+from srcs.interfaces.interface import *
 
 def ft_echo(token:Token):
     i = 0

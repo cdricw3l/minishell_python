@@ -1,5 +1,5 @@
 import os
-from interfaces.interface import *
+from srcs.interfaces.interface import *
 
 def check_variable(vars: list[str]):
     if (len(vars) == 0):

@@ -1,10 +1,10 @@
 VENV_NAME=venv
-SRCS= srcs/__init__.py
+SRCS= srcs/main.py
 COM=pynishell
 ARG=
 
 test:
-	python3 assertions/__init__.py
+	python3 -m assertions.assertion
 env:
 	python3 -m venv ${VENV_NAME}
 

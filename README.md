@@ -29,3 +29,18 @@ of your choice.\
 • debug: Run the main script in debug mode using Python’s built-in debugger.\
 • clean: Remove temporary files or caches to keep the project environment clean.\
 • lint: Lint your code using flake8 to ensure it meets coding standards.
+
+
+# Step 1: Redaction de la grammaire
+
+INPUT       := LISTE
+LISTE       := CMD PIPE OP
+OP          :=  "&&" LISTE | "&" LISTE | "||" LISTE |  ";" LISTE  |  ε
+PIPE        := "|" CMD PIPE |  ε
+CMD         := WORD ARGS REDIRECTION
+ARGS        :=  TIRET WORD ARGS | WORD ARGS | ε
+TIRET       := "-" | "--"
+REDIRECTION :=  RTYPE FILENAME REDIRECTION | ε
+RTYPE       := "<" | "<<" | ">" | ">>"
+FILENAME    :=  WORD "." WORD | WORD
+WORD        :=  {A-Za-z0-9}+

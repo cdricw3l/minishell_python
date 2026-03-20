@@ -33,14 +33,14 @@ of your choice.\
 
 # Step 1: Redaction de la grammaire
 
-INPUT       := LISTE
-LISTE       := CMD PIPE OP
-OP          :=  "&&" LISTE | "&" LISTE | "||" LISTE |  ";" LISTE  |  ε
-PIPE        := "|" CMD PIPE |  ε
-CMD         := WORD ARGS REDIRECTION
-ARGS        :=  TIRET WORD ARGS | WORD ARGS | ε
-TIRET       := "-" | "--"
-REDIRECTION :=  RTYPE FILENAME REDIRECTION | ε
-RTYPE       := "<" | "<<" | ">" | ">>"
-FILENAME    :=  WORD "." WORD | WORD
+LISTE       :=  PIPE SPACE OS SPACE LIST | PIPE
+PIPE        :=  CMD SPACE PS SPACE PIPE |  CMD
+CMD         :=  WORD SPACE ARGS SPACE REDIRECTION
+ARGS        :=  AS WORD SPACE ARGS | WORD SPACE ARGS | ε
+REDIRECTION :=  RTYPE SPACE WORD SPACE REDIRECTION | ε
+
+OS          :=  "&&"  | "&"  | "||" |  ";"  
+PS          :=  "|"
+AS          :=  "-" | "--"
+RTYPE       :=  "<" | "<<" | ">" | ">>"
 WORD        :=  {A-Za-z0-9}+

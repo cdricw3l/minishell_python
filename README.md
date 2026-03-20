@@ -37,10 +37,11 @@ LISTE       :=  PIPE SPACE OS SPACE LIST | PIPE
 PIPE        :=  CMD SPACE PS SPACE PIPE |  CMD
 CMD         :=  WORD SPACE ARGS SPACE REDIRECTION
 ARGS        :=  AS WORD SPACE ARGS | WORD SPACE ARGS | ε
-REDIRECTION :=  RTYPE SPACE WORD SPACE REDIRECTION | ε
+REDIRECTION :=  RS SPACE WORD SPACE REDIRECTION | ε
 
 OS          :=  "&&"  | "&"  | "||" |  ";"  
 PS          :=  "|"
 AS          :=  "-" | "--"
-RTYPE       :=  "<" | "<<" | ">" | ">>"
+RS          :=  "<" | "<<" | ">" | ">>"
 WORD        :=  {A-Za-z0-9}+
+SPACE       :=  " "
